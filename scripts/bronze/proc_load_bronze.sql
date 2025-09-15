@@ -7,6 +7,16 @@
       - Replace default paths with environment-specific values before deployment.
 */
 
+/*
+EXEC bronze.load_bronze
+    @crm_cust_info_path = 'C:\path\cust_info.csv',
+    @crm_prd_info_path = 'C:\path\prd_info.csv',
+    @crm_sales_details_path = 'C:\path\sales_details.csv',
+    @erp_cust_az12_path = 'C:\path\cust_az12.csv',
+    @erp_loc_a101_path = 'C:\path\loc_a101.csv',
+    @erp_px_cat_g1v2_path = 'C:\path\px_cat_g1v2.csv';
+*/
+
 CREATE OR ALTER PROCEDURE bronze.load_bronze
     @crm_cust_info_path NVARCHAR(255),
     @crm_prd_info_path NVARCHAR(255),
